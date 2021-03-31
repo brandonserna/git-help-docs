@@ -8,7 +8,7 @@ we can choose to keep some sensitive files out of git repo using gitignore so th
 The gitignore is a text file in the repository directory, and we can specify any files there that we do not want to track - for example, files with sensitive information or temporary files  
 
 !!! Important    
-    See common gitignore files here [link](https://github.com/github/gitignore)
+    See common gitignore files [link](https://github.com/github/gitignore)
 
 Example Python .gitignore file
 
@@ -42,8 +42,6 @@ share/python-wheels/
 MANIFEST
 ```
 
-
-
 #### Q: does git work with office files?
 
 Most MS Office files (docx, xlsx) are actually saved as a compressed xml file or file(s). However this format doesn't easily facilitate optimal version tracking with git. Long answer is There are projects like pandoc and rezip which tries to accommodate office files in git.
@@ -56,7 +54,9 @@ A: It comes down to preference and workflows for the user's other tasks. In the 
 
 A:  think of commit as a thematic update.  Trevor usually commits at the end of the day.  Sounds like some of this is team-determined.
 There is some lesson content on reconciliation of conflicts, that won't be covered in detail today, but you can look up.
-TIP: Remember to pull - especially if working on a project with many other people. 
+
+!!! Important    
+    Remember to pull often __especially__ if working on a project with other people. 
 
 #### Q: When do you need to 'fetch' as opposed to 'pull'? 
 
@@ -65,17 +65,17 @@ A: git fetch is similar to pull but doesn't incorporate the changes right into y
 #### Q: Can you talk a little about branches and how they are used to organize a project? 
 
 A: Branches: when collaborating with others, organizing a project, instead of trying to push changes directly to a repository, make a local copy, turn it into a branch (remove it from the immediate workflow), make changes on that branch, then push over to the remote repository, does not get incorporated immediately like a normal push, but there is a pull request for review before they are incorporated. Cloning vs. forking: cloning: put a repository on our own machine. "Personally I think you can use them synonymously" You don't have to associate a cloned repository with someone's master repository, you can use it for your own purposes. Clone "put it on your machine". Fork: very synonymous. If you want to incorporate your changes, then use a branch. REMEMBER these are somewhat advanced concepts. Take software carpentry Git lesson, walks through additional steps. http://swcarpentry.github.io/git-novice/ 
-TIP: this is the branching resource: https://learngitbranching.js.org/
 
-#### Q: In order to practice, can you show us how to share our repositories with fellow classmates?
-
-1. from settings, add a collaboration
-2. or, share the link so that they can fork (make copy), make changes and send you a pull request to fetch their chages
+!!! Important    
+    Branching resource: [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
 
 #### Q: How do I create more space between the command line and the bottom of my GitBash window? 
 
-I saw Trevor do that a few times today.
-clear command might help with screen clutter; You can also type Ctrl + L
+The clear command might help with screen clutter; You can also type Ctrl + L
+
+```sh
+clear
+```
 
 #### Q: refusing to push
 
@@ -138,11 +138,11 @@ Short answer: There are some things you need quotes around, and some things you 
 
 Yes.
 
-Check if you have git: **git --version** , if you get a response, you are in good shape
+Check if you have git: ` git --version`, if you get a response, you are in good shape
 
-Navigate to the new hello-world directory you just made. Type **git init**. see if anything happened, type ls -a, you should see the "hidden files/folders", .git
+Navigate to the new hello-world directory you just made. Type `git init`. see if anything happened, type `ls -a`, you should see the "hidden files/folders", .git
 
-**git status**.  - what has changed? (probably nothing right now)
+```git status```.  - what has changed? (probably nothing right now)
 
 **Q: How did you change the default branch name from 'master' to 'main'?** 
 
