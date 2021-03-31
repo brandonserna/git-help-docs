@@ -2,7 +2,7 @@
 
 A compilation of handy git resources, links, guides and other resources. 
 
-__what is git?__
+__What is git?__
 
 Software for tracking changes in files. Useful for collaboration and version control.
 
