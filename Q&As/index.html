@@ -1,0 +1,659 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Questions and answers - git notes and help</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="git notes and help" class="md-header__button md-logo" aria-label="git notes and help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            git notes and help
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Questions and answers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="git notes and help" class="md-nav__button md-logo" aria-label="git notes and help" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    git notes and help
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        git
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Questions and answers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Questions and answers
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#q-what-is-a-gitignore-file" class="md-nav__link">
+    Q: what is a gitignore file?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-does-git-work-with-office-files" class="md-nav__link">
+    Q: does git work with office files?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-would-we-use-command-line-if-this-can-be-done-on-the-interface" class="md-nav__link">
+    Q: Why would we use command-line if this can be done on the interface?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-is-there-a-best-practice-for-when-you-want-to-go-from-add-to-commit" class="md-nav__link">
+    Q: is there a best practice for when you want to go from add to commit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-when-do-you-need-to-fetch-as-opposed-to-pull" class="md-nav__link">
+    Q: When do you need to 'fetch' as opposed to 'pull'?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-can-you-talk-a-little-about-branches-and-how-they-are-used-to-organize-a-project" class="md-nav__link">
+    Q: Can you talk a little about branches and how they are used to organize a project?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-how-do-i-create-more-space-between-the-command-line-and-the-bottom-of-my-gitbash-window" class="md-nav__link">
+    Q: How do I create more space between the command line and the bottom of my GitBash window?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-refusing-to-push" class="md-nav__link">
+    Q: refusing to push
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-refusing-to-pull-with-upstream-message-in-error" class="md-nav__link">
+    Q: refusing to pull with upstream message in error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-is-master-not-used-anymore-in-github" class="md-nav__link">
+    Q: Why is "Master" not used anymore in GitHub?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-unrelated-histories-error" class="md-nav__link">
+    Q: unrelated histories error
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-workflow/" class="md-nav__link">
+        Basic workflow
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        Useful commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        setup
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-with-git/" class="md-nav__link">
+        Working with git
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#q-what-is-a-gitignore-file" class="md-nav__link">
+    Q: what is a gitignore file?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-does-git-work-with-office-files" class="md-nav__link">
+    Q: does git work with office files?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-would-we-use-command-line-if-this-can-be-done-on-the-interface" class="md-nav__link">
+    Q: Why would we use command-line if this can be done on the interface?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-is-there-a-best-practice-for-when-you-want-to-go-from-add-to-commit" class="md-nav__link">
+    Q: is there a best practice for when you want to go from add to commit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-when-do-you-need-to-fetch-as-opposed-to-pull" class="md-nav__link">
+    Q: When do you need to 'fetch' as opposed to 'pull'?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-can-you-talk-a-little-about-branches-and-how-they-are-used-to-organize-a-project" class="md-nav__link">
+    Q: Can you talk a little about branches and how they are used to organize a project?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-how-do-i-create-more-space-between-the-command-line-and-the-bottom-of-my-gitbash-window" class="md-nav__link">
+    Q: How do I create more space between the command line and the bottom of my GitBash window?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-refusing-to-push" class="md-nav__link">
+    Q: refusing to push
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-refusing-to-pull-with-upstream-message-in-error" class="md-nav__link">
+    Q: refusing to pull with upstream message in error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-why-is-master-not-used-anymore-in-github" class="md-nav__link">
+    Q: Why is "Master" not used anymore in GitHub?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-unrelated-histories-error" class="md-nav__link">
+    Q: unrelated histories error
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="questions-and-answers">Questions and answers</h1>
+<p>Compilation of our library carpentry workshop notes</p>
+<h4 id="q-what-is-a-gitignore-file">Q: what is a gitignore file?</h4>
+<p>we can choose to keep some sensitive files out of git repo using gitignore so that it is not tracked
+The gitignore is a text file in the repository directory, and we can specify any files there that we do not want to track - for example, files with sensitive information or temporary files  </p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>See common gitignore files <a href="https://github.com/github/gitignore">link</a></p>
+</div>
+<p>Example Python .gitignore file</p>
+<div class="highlight"><pre><span></span><code># Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+</code></pre></div>
+<h4 id="q-does-git-work-with-office-files">Q: does git work with office files?</h4>
+<p>Most MS Office files (docx, xlsx) are actually saved as a compressed xml file or file(s). However this format doesn't easily facilitate optimal version tracking with git. Long answer is There are projects like pandoc and rezip which tries to accommodate office files in git.</p>
+<h4 id="q-why-would-we-use-command-line-if-this-can-be-done-on-the-interface">Q: Why would we use command-line if this can be done on the interface?</h4>
+<p>A: It comes down to preference and workflows for the user's other tasks. In the development/data world it is common to use the terminal because you are "already there."  The interfaces are a viable option, but they may distance you from the processes themselves and/or give you less information for troubleshooting. </p>
+<h4 id="q-is-there-a-best-practice-for-when-you-want-to-go-from-add-to-commit">Q: is there a best practice for when you want to go from add to commit</h4>
+<p>A:  think of commit as a thematic update.  Trevor usually commits at the end of the day.  Sounds like some of this is team-determined.
+There is some lesson content on reconciliation of conflicts, that won't be covered in detail today, but you can look up.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Remember to pull often <strong>especially</strong> if working on a project with other people. </p>
+</div>
+<h4 id="q-when-do-you-need-to-fetch-as-opposed-to-pull">Q: When do you need to 'fetch' as opposed to 'pull'?</h4>
+<p>A: git fetch is similar to pull but doesn't incorporate the changes right into your repository. This is a good way to see and review any changes. When ready to actually bring in the changes (not just look) then git pull.</p>
+<h4 id="q-can-you-talk-a-little-about-branches-and-how-they-are-used-to-organize-a-project">Q: Can you talk a little about branches and how they are used to organize a project?</h4>
+<p>A: Branches: when collaborating with others, organizing a project, instead of trying to push changes directly to a repository, make a local copy, turn it into a branch (remove it from the immediate workflow), make changes on that branch, then push over to the remote repository, does not get incorporated immediately like a normal push, but there is a pull request for review before they are incorporated. Cloning vs. forking: cloning: put a repository on our own machine. "Personally I think you can use them synonymously" You don't have to associate a cloned repository with someone's master repository, you can use it for your own purposes. Clone "put it on your machine". Fork: very synonymous. If you want to incorporate your changes, then use a branch. REMEMBER these are somewhat advanced concepts. Take software carpentry Git lesson, walks through additional steps. http://swcarpentry.github.io/git-novice/ </p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Branching resource: <a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
+</div>
+<h4 id="q-how-do-i-create-more-space-between-the-command-line-and-the-bottom-of-my-gitbash-window">Q: How do I create more space between the command line and the bottom of my GitBash window?</h4>
+<p>The clear command might help with screen clutter; You can also type Ctrl + L</p>
+<div class="highlight"><pre><span></span><code>clear
+</code></pre></div>
+<h4 id="q-refusing-to-push">Q: refusing to push</h4>
+<p>pull first</p>
+<h4 id="q-refusing-to-pull-with-upstream-message-in-error">Q: refusing to pull with upstream message in error</h4>
+<div class="highlight"><pre><span></span><code>git branch --set-upstream-to<span class="o">=</span>origin/main main
+</code></pre></div>
+<p>If  you are using master, use master </p>
+<h4 id="q-why-is-master-not-used-anymore-in-github">Q: Why is "Master" not used anymore in GitHub?</h4>
+<p>A: There is movement away from colonialist vocabulary.</p>
+<h4 id="q-unrelated-histories-error">Q: unrelated histories error</h4>
+<div class="highlight"><pre><span></span><code>git pull --allow-unrelated-histories origin main
+</code></pre></div>
+<p><strong>Q: What is that .git folder?</strong></p>
+<p>A: that’s where git is tracking the change information “.git” is generally a “hidden” file but you can set preferences in explorer or use a flag in the shell to display those files. use ls -a to show hidden files. things that start with a '.' are often hidden by default</p>
+<p><strong>Q: hash reference / hash value?</strong> </p>
+<p>A computed value, the computer is looking at the exact length of the file and creating a mathematical value, it's a technique out of cryptography. Different algorithms calculate the hash values. When git was developed, this was an unambiguous way to reference different changes (although "hash collisions" may occur!) First 7 digits is a shorter reference.</p>
+<p><strong>Q: How do I create a branch in a collaborator's project? Can I do it after cloning?</strong> </p>
+<p>A: asd</p>
+<p><strong>Q: What are the different levels of authorization?</strong> </p>
+<p>A: Gitlab has different levels https://docs.gitlab.com/ee////////user/permissions.html</p>
+<p><strong>Q: A branch is kind of like a breakout group?</strong> A: :) that’s a good analogy - and when you make a “pull request” that is bringing whatever you discussed in the breakout room to the whole group</p>
+<p><strong>Other tools for a little more user-friendly or not-command-line work:</strong></p>
+<p>See <a href="/working-with-git">tools</a></p>
+<ul>
+<li>
+<p>Atom (https://flight-manual.atom.io/)</p>
+</li>
+<li>
+<p>SourceTree</p>
+</li>
+<li>
+<p>VScode</p>
+</li>
+<li>
+<p>Github Desktop</p>
+</li>
+</ul>
+<p><strong>Q: I don't understand why we need to put quotes around user name and email but not when we make a directory of hello-world.</strong> </p>
+<p>Short answer: There are some things you need quotes around, and some things you don't. :-). In general, when giving a command an argument (like cd), don't need quotes.</p>
+<p><strong>Q: If I'm not signed in to GitHub, will the git commands still work?</strong> </p>
+<p>Yes.</p>
+<p>Check if you have git: <code>git --version</code>, if you get a response, you are in good shape</p>
+<p>Navigate to the new hello-world directory you just made. Type <code>git init</code>. see if anything happened, type <code>ls -a</code>, you should see the "hidden files/folders", .git</p>
+<p><code>git status</code>.  - what has changed? (probably nothing right now)</p>
+<p><strong>Q: How did you change the default branch name from 'master' to 'main'?</strong> </p>
+<p>A: new versions use main, older versions use master. Previously git used the word 'master' to all primary repositories, they recent changed that to 'main' instead of 'master' but in the curriculum it may still say 'master' because it is a recent change.</p>
+<p><strong>Q: If you edit a file, do git add on it, and edit it some more, will it commit the last changes you made to the file or only the changes when you ran git add?</strong> </p>
+<p>A: it will only commit the changes you performed the add command on</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              git
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../basic-workflow/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Basic workflow
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>
