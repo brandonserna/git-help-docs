@@ -23,6 +23,4 @@ __Remote__: pointer/link to a repository (GitHub, GitLab, BitBucket, ...)
 !!! note    
     See this great cheat sheet at [JRebel](https://www.jrebel.com/system/files/git-cheat-sheet.pdf)
 
-![](https://www.jrebel.com/system/files/git-cheat-sheet.pdf)
-
 
